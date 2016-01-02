@@ -21,13 +21,13 @@ import java.util.*;
  */
 public class GritzleBosses extends JFrame{
     private static final String GRITZLE = "http://www.webct.net:8080/api";
-//    private static final String GRITZLE = "http://localhost:8080/api";
     private static final String TOP_POSTS = GRITZLE + "/posts/top50";
     private static final String MEDIA = GRITZLE + "/media/";
     private final HashSet<String> users = new HashSet<>();
     private final JLabel jlLoading = new JLabel();
     private final JButton jbRefresh = new JButton("Refresh");
     private JPanel jpContainer = new JPanel(new GridLayout(0, 3, 0, 10));
+
     /**
      * Default constructor builds the GUI
      */
@@ -37,11 +37,10 @@ public class GritzleBosses extends JFrame{
     }
 
     /**
-     * This Method does all the necessary setup to have the GUI
-     * Running.
+     * Adds a view to the GUI to indicate that the data is loading
+     * and displays the GUI.
      */
     public void buildGui(){
-        //displays a friendly view while GUI loads
         this.loading();
 
         this.setTitle("Gritzle - Top Users");
