@@ -26,8 +26,8 @@ public class GritzleBosses extends JFrame{
     private static final String MEDIA = GRITZLE + "/media/";
     private final HashSet<String> users = new HashSet<>();
     private final JLabel jlLoading = new JLabel();
-    JButton jbRefresh = new JButton("Refresh");
-    JPanel jpContainer = new JPanel(new GridLayout(0, 3, 0, 10));
+    private final JButton jbRefresh = new JButton("Refresh");
+    private JPanel jpContainer = new JPanel(new GridLayout(0, 3, 0, 10));
     /**
      * Default constructor builds the GUI
      */
