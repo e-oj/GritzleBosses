@@ -10,7 +10,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.UnknownHostException;
 import java.util.*;
-import java.util.List;
 
 /**
  * This Program queries my Gritzle aka Cyclops api
@@ -180,7 +179,6 @@ public class GritzleBosses extends JFrame{
                 panel.add(jpContainer);
             }
         }
-        System.out.println(users);
     }
 
     /**
